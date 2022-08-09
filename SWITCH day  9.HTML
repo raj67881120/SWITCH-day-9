@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATE&DAY</title>
+        <style>
+            h1{
+                text-align: center;
+            }
+            p{
+                background-color: lightgray;
+                color: black;
+                font-size: 3.5vh;
+            }
+        </style>
+</head>
+<body>
+    <h1>THIS IS DEMO OF HOW TO GET DAY & DATE USING SWITCH IN JS</h1>
+    <p id="date&day"></p>
+    <br>
+    <script>
+        let day;
+        switch (new Date().getDay()) {
+          case 0:
+            day = "Sunday"+" And Date Are:"+new Date().getDate();
+            break;
+          case 1:
+            day = "Monday"+" And Date Are:"+new Date().getDate();
+            break;
+          case 2:
+            day = "Tuesday"+" And Date Are: "+new Date().getDate();
+            break;
+          case 3:
+            day = "Wednesday"+" And Date Are: "+new Date().getDate();
+            break;
+          case 4:
+            day = "Thursday"+" And Date Are: "+new Date().getDate();
+            break;
+          case 5:
+            day = "Friday"+" And Date Are: "+new Date().getDate();
+            break;
+          case  6:
+            day = "Saturday"+" And Date Are: "+new Date().getDate();
+        }
+        document.getElementById("date&day").innerHTML = "Today is " + day;
+        </script>
+</body>
+</html>
